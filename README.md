@@ -55,3 +55,7 @@ Or run your own MySQL database and update the .env file with the correct credent
     ```
 
 5. The server will run on `http://localhost:3000`
+
+## Deployment
+
+The host after deployment is `https://ie402-tour-management-api.onrender.com`
