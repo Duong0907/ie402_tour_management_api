@@ -1,21 +1,17 @@
 module.exports = (sequelize, DataTypes) => {
-    const User = sequelize.define('user', {
-        email: {
+    const Region = sequelize.define('region', {
+        id: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            primaryKey: true,
+        },
+        name: {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        username: {
+        description: {
             type: DataTypes.STRING,
             allowNull: false,
-        },
-        password: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
-        role: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            defaultValue: 'customer',
         },
         createdAt: { 
             type: DataTypes.DATE, 
@@ -27,5 +23,5 @@ module.exports = (sequelize, DataTypes) => {
         },
     });
 
-    return User;
+    return Region;
 };

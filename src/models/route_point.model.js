@@ -1,21 +1,16 @@
 module.exports = (sequelize, DataTypes) => {
-    const User = sequelize.define('user', {
-        email: {
+    const RoutePoint = sequelize.define('polygon_region', {
+        routeId: {
             type: DataTypes.STRING,
             allowNull: false,
+            primaryKey: true,
+            field: 'route_id',
         },
-        username: {
+        pointId: {
             type: DataTypes.STRING,
             allowNull: false,
-        },
-        password: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
-        role: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            defaultValue: 'customer',
+            primaryKey: true,
+            field: 'point_id',
         },
         createdAt: { 
             type: DataTypes.DATE, 
@@ -27,5 +22,5 @@ module.exports = (sequelize, DataTypes) => {
         },
     });
 
-    return User;
+    return RoutePoint;
 };

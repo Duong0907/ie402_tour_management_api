@@ -1,25 +1,32 @@
 module.exports = (sequelize, DataTypes) => {
-    const User = sequelize.define('user', {
-        email: {
+    const Comment = sequelize.define('comment', {
+        id: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            primaryKey: true,
+        },
+        userId: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            field: 'user_id',
+        },
+        tourId: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            field: 'tour_id',
+        },
+        content: {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        username: {
-            type: DataTypes.STRING,
+        rating: {
+            type: DataTypes.INTEGER,
             allowNull: false,
-        },
-        password: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
-        role: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            defaultValue: 'customer',
         },
         createdAt: { 
             type: DataTypes.DATE, 
-            field: 'created_at' 
+            field: 'created_at',
+            primaryKey: true 
         },
         updatedAt: { 
             type: DataTypes.DATE, 
@@ -27,5 +34,5 @@ module.exports = (sequelize, DataTypes) => {
         },
     });
 
-    return User;
+    return Comment;
 };
