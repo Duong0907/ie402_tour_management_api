@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-    const RoutePoint = sequelize.define('polygon_region', {
+    const RoutePoint = sequelize.define('route_point', {
         routeId: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -12,13 +12,15 @@ module.exports = (sequelize, DataTypes) => {
             primaryKey: true,
             field: 'point_id',
         },
-        createdAt: { 
-            type: DataTypes.DATE, 
-            field: 'created_at' 
+        createdAt: {
+            type: DataTypes.DATE,
+            field: 'created_at',
+            defaultValue: sequelize.literal('CURRENT_TIMESTAMP'),
         },
-        updatedAt: { 
-            type: DataTypes.DATE, 
-            field: 'updated_at' 
+        updatedAt: {
+            type: DataTypes.DATE,
+            field: 'updated_at',
+            defaultValue: sequelize.literal('CURRENT_TIMESTAMP'),
         },
     });
 

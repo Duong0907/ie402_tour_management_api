@@ -33,6 +33,7 @@ sequelize
 const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
+
 db.users = require('./user.model.js')(sequelize, DataTypes);
 db.regions = require('./region.model.js')(sequelize, DataTypes);
 db.polygons = require('./polygon.model.js')(sequelize, DataTypes);
@@ -61,19 +62,20 @@ db.locations.belongsToMany(db.tours, {
     otherKey: 'tourId',
 });
 
+
 // location and point: one to one
-db.locations.hasOne(db.points, {
+db.points.hasOne(db.locations, {
     foreignKey: 'pointId',
     foreignKeyConstraint: true,
 });
-db.points.belongsTo(db.locations);
+db.locations.belongsTo(db.points);
 
 // location and polygon: one to one
-db.locations.hasOne(db.polygons, {
+db.polygons.hasOne(db.locations, {
     foreignKey: 'polygonId',
     foreignKeyConstraint: true,
 });
-db.polygons.belongsTo(db.locations);
+db.locations.belongsTo(db.polygons);
 
 // region and location: one to many
 db.regions.hasMany(db.locations, {

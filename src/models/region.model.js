@@ -13,13 +13,15 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        createdAt: { 
-            type: DataTypes.DATE, 
-            field: 'created_at' 
+        createdAt: {
+            type: DataTypes.DATE,
+            field: 'created_at',
+            defaultValue: sequelize.literal('CURRENT_TIMESTAMP'),
         },
-        updatedAt: { 
-            type: DataTypes.DATE, 
-            field: 'updated_at' 
+        updatedAt: {
+            type: DataTypes.DATE,
+            field: 'updated_at',
+            defaultValue: sequelize.literal('CURRENT_TIMESTAMP'),
         },
     });
 

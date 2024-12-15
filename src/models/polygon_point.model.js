@@ -12,13 +12,15 @@ module.exports = (sequelize, DataTypes) => {
             primaryKey: true,
             field: 'polygon_id',
         },
-        createdAt: { 
-            type: DataTypes.DATE, 
-            field: 'created_at' 
+        createdAt: {
+            type: DataTypes.DATE,
+            field: 'created_at',
+            defaultValue: sequelize.literal('CURRENT_TIMESTAMP'),
         },
-        updatedAt: { 
-            type: DataTypes.DATE, 
-            field: 'updated_at' 
+        updatedAt: {
+            type: DataTypes.DATE,
+            field: 'updated_at',
+            defaultValue: sequelize.literal('CURRENT_TIMESTAMP'),
         },
     });
 

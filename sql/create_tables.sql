@@ -114,7 +114,7 @@ CREATE TABLE polygon_regions (
     FOREIGN KEY (region_id) REFERENCES regions(id)
 )
 
-CREATE TABLE route_images (
+CREATE TABLE tour_images (
     id VARCHAR(20) PRIMARY KEY,
     url VARCHAR(255) NOT NULL,
     tour_id VARCHAR(20) NOT NULL,

@@ -6,7 +6,7 @@ module.exports = (sequelize, DataTypes) => {
             primaryKey: true,
         },
         userId: {
-            type: DataTypes.STRING,
+            type: DataTypes.INTEGER,
             allowNull: false,
             field: 'user_id',
         },
@@ -23,14 +23,15 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.INTEGER,
             allowNull: false,
         },
-        createdAt: { 
-            type: DataTypes.DATE, 
+        createdAt: {
+            type: DataTypes.DATE,
             field: 'created_at',
-            primaryKey: true 
+            defaultValue: sequelize.literal('CURRENT_TIMESTAMP'),
         },
-        updatedAt: { 
-            type: DataTypes.DATE, 
-            field: 'updated_at' 
+        updatedAt: {
+            type: DataTypes.DATE,
+            field: 'updated_at',
+            defaultValue: sequelize.literal('CURRENT_TIMESTAMP'),
         },
     });
 

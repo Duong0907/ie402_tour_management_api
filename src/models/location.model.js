@@ -18,17 +18,34 @@ module.exports = (sequelize, DataTypes) => {
             allowNull: false,
             defaultValue: 'point',
         },
+        polygonId: {
+            type: DataTypes.STRING,
+            allowNull: true,
+            field: 'polygon_id',
+        },
+        regionId: {
+            type: DataTypes.STRING,
+            allowNull: true,
+            field: 'region_id',
+        },
+        pointId: {
+            type: DataTypes.STRING,
+            allowNull: true,
+            field: 'point_id',
+        },
         icon: {
             type: DataTypes.STRING,
             allowNull: false,
         },
         createdAt: {
             type: DataTypes.DATE,
-            field: 'created_at'
+            field: 'created_at',
+            defaultValue: sequelize.literal('CURRENT_TIMESTAMP'),
         },
         updatedAt: {
             type: DataTypes.DATE,
-            field: 'updated_at'
+            field: 'updated_at',
+            defaultValue: sequelize.literal('CURRENT_TIMESTAMP'),
         },
     });
 

@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
             field: 'tour_id',
         },
         userId: {
-            type: DataTypes.STRING,
+            type: DataTypes.INTEGER,
             allowNull: false,
             field: 'user_id',
         },
@@ -20,13 +20,15 @@ module.exports = (sequelize, DataTypes) => {
             allowNull: false,
             defaultValue: 'pending',
         },
-        createdAt: { 
-            type: DataTypes.DATE, 
-            field: 'created_at' 
+        createdAt: {
+            type: DataTypes.DATE,
+            field: 'created_at',
+            defaultValue: sequelize.literal('CURRENT_TIMESTAMP'),
         },
-        updatedAt: { 
-            type: DataTypes.DATE, 
-            field: 'updated_at' 
+        updatedAt: {
+            type: DataTypes.DATE,
+            field: 'updated_at',
+            defaultValue: sequelize.literal('CURRENT_TIMESTAMP'),
         },
     });
 

@@ -1,25 +1,19 @@
 module.exports = (sequelize, DataTypes) => {
-    const Polygon = sequelize.define('point', {
+    const Polygon = sequelize.define('polygon', {
         id: {
             type: DataTypes.STRING,
             allowNull: false,
             primaryKey: true,
         },
-        longtitude: {
-            type: DataTypes.FLOAT,
-            allowNull: false,
+        createdAt: {
+            type: DataTypes.DATE,
+            field: 'created_at',
+            defaultValue: sequelize.literal('CURRENT_TIMESTAMP'),
         },
-        latitude: {
-            type: DataTypes.FLOAT,
-            allowNull: false,
-        },
-        createdAt: { 
-            type: DataTypes.DATE, 
-            field: 'created_at' 
-        },
-        updatedAt: { 
-            type: DataTypes.DATE, 
-            field: 'updated_at' 
+        updatedAt: {
+            type: DataTypes.DATE,
+            field: 'updated_at',
+            defaultValue: sequelize.literal('CURRENT_TIMESTAMP'),
         },
     });
 
