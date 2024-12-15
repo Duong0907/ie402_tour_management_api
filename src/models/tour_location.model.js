@@ -1,26 +1,16 @@
 module.exports = (sequelize, DataTypes) => {
-    const User = sequelize.define('user', {
-        id: {
-            type: DataTypes.INTEGER,
-            autoIncrement: true,
+    const TourLocation = sequelize.define('tour_location', {
+        tourId: {
+            type: DataTypes.STRING,
+            allowNull: false,
             primaryKey: true,
+            field: 'tour_id',
         },
-        email: {
+        locationId: {
             type: DataTypes.STRING,
             allowNull: false,
-        },
-        username: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
-        password: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
-        role: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            defaultValue: 'customer',
+            primaryKey: true,
+            field: 'location_id',
         },
         createdAt: {
             type: DataTypes.DATE,
@@ -34,5 +24,5 @@ module.exports = (sequelize, DataTypes) => {
         },
     });
 
-    return User;
+    return TourLocation;
 };

@@ -1,26 +1,41 @@
 module.exports = (sequelize, DataTypes) => {
-    const User = sequelize.define('user', {
+    const Location = sequelize.define('location', {
         id: {
-            type: DataTypes.INTEGER,
-            autoIncrement: true,
+            type: DataTypes.STRING,
+            allowNull: false,
             primaryKey: true,
         },
-        email: {
+        name: {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        username: {
-            type: DataTypes.STRING,
+        description: {
+            type: DataTypes.TEXT,
             allowNull: false,
         },
-        password: {
+        type: {
             type: DataTypes.STRING,
             allowNull: false,
+            defaultValue: 'point',
         },
-        role: {
+        polygonId: {
+            type: DataTypes.STRING,
+            allowNull: true,
+            field: 'polygon_id',
+        },
+        regionId: {
+            type: DataTypes.STRING,
+            allowNull: true,
+            field: 'region_id',
+        },
+        pointId: {
+            type: DataTypes.STRING,
+            allowNull: true,
+            field: 'point_id',
+        },
+        icon: {
             type: DataTypes.STRING,
             allowNull: false,
-            defaultValue: 'customer',
         },
         createdAt: {
             type: DataTypes.DATE,
@@ -34,5 +49,5 @@ module.exports = (sequelize, DataTypes) => {
         },
     });
 
-    return User;
+    return Location;
 };
