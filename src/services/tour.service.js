@@ -34,13 +34,19 @@ const getTourById = async (id) => {
                     model: locationModel,
                     as: 'locations',
                     attributes: {
-                        exclude: ['createdAt', 'updatedAt']
+                        exclude: ['createdAt', 'updatedAt', 'pointId']
                     },
                     through: {
                         model: tourLocationModel,
                         as: 'tourLocations',
                         attributes: {
                             exclude: ['tourId', 'locationId', 'createdAt', 'updatedAt']
+                        }
+                    },
+                    include: {
+                        model: pointModel,
+                        attributes: {
+                            exclude: ['id', 'createdAt', 'updatedAt']
                         }
                     }
                 },
