@@ -17,6 +17,13 @@ const createUser = async (user) => {
         return new BadRequestErrorResponse('Invalid email');
     }
 
+    // Validate password
+    if (!isValidPassword(password)) {
+        return new BadRequestErrorResponse(
+            'Password must have min 8 letter, with at least a symbol, upper and lower case letters and a number',
+        );
+    }
+
     const existedUser = await UserModel.findOne({
         where: {
             email: user.email,
@@ -26,12 +33,6 @@ const createUser = async (user) => {
         return new BadRequestErrorResponse('Existed email');
     }
 
-    // Validate password
-    if (!isValidPassword(password)) {
-        return new BadRequestErrorResponse(
-            'Password must have min 8 letter, with at least a symbol, upper and lower case letters and a number',
-        );
-    }
 
     // Hash password
     let hashedPassword = await passwordUtil.hashPassword(password);

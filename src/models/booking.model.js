@@ -30,6 +30,9 @@ module.exports = (sequelize, DataTypes) => {
             field: 'updated_at',
             defaultValue: sequelize.literal('CURRENT_TIMESTAMP'),
         },
+    }, {
+        tableName: 'BOOKING',
+        timestamps: true,
     });
 
     return Booking;

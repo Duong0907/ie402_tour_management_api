@@ -127,7 +127,10 @@ db.users.hasMany(db.tours, {
     foreignKey: 'adminId',
     foreignKeyConstraint: true,
 });
-db.tours.belongsTo(db.users);
+db.tours.belongsTo(db.users, {
+    foreignKey: 'adminId',
+    foreignKeyConstraint: true,
+});
 
 // route and point: many to many
 db.routes.belongsToMany(db.points, {
@@ -144,9 +147,14 @@ db.points.belongsToMany(db.routes, {
 // point and tour (is center point of): one to many
 db.points.hasMany(db.tours, {
     foreignKey: 'centerPointId',
+    as: 'centerPoint',
     foreignKeyConstraint: true,
 });
-db.tours.belongsTo(db.points);
+db.tours.belongsTo(db.points, {
+    foreignKey: 'centerPointId',
+    as: 'centerPoint',
+    foreignKeyConstraint: true,
+});
 
 
 // ---------------------------
