@@ -39,7 +39,7 @@ module.exports = (sequelize, DataTypes) => {
         },
         adminId: {
             type: DataTypes.INTEGER,
-            allowNull: false,
+            allowNull: true,
             field: 'admin_id',
         },
         centerPointId: {
@@ -57,6 +57,9 @@ module.exports = (sequelize, DataTypes) => {
             field: 'updated_at',
             defaultValue: sequelize.literal('CURRENT_TIMESTAMP'),
         },
+    }, {
+        tableName: 'TOUR',
+        timestamps: true,
     });
 
     return Tour;

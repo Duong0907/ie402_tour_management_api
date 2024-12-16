@@ -6,7 +6,7 @@ module.exports = (sequelize, DataTypes) => {
             primaryKey: true,
         },
         longitude: {
-            type: DataTypes.FLOAT,
+            type: DataTypes.STRING,
             allowNull: false,
         },
         latitude: {
@@ -23,6 +23,9 @@ module.exports = (sequelize, DataTypes) => {
             field: 'updated_at',
             defaultValue: sequelize.literal('CURRENT_TIMESTAMP'),
         },
+    }, {
+        tableName: 'POINT',
+        timestamps: true,
     });
 
     return Point;
