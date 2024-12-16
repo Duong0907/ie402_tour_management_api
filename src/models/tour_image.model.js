@@ -1,7 +1,8 @@
 module.exports = (sequelize, DataTypes) => {
     const TourImage = sequelize.define('tour_image', {
         id: {
-            type: DataTypes.STRING,
+            type: DataTypes.INTEGER,
+            autoIncrement: true,
             allowNull: false,
             primaryKey: true,
         },

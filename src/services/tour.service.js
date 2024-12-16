@@ -7,6 +7,7 @@ const tourLocationModel = db.tour_locations;
 const pointModel = db.points;
 const routeModel = db.routes;
 const routePointModel = db.route_points;
+const tourImageModel = db.tour_images;
 
 const getAllTours = async () => {
     try {
@@ -79,6 +80,13 @@ const getTourById = async (id) => {
                             }
                         }
                     ]
+                },
+                {
+                    model: tourImageModel,
+                    as: 'images',
+                    attributes: {
+                        exclude: ['id', 'tourId', 'createdAt', 'updatedAt']
+                    }
                 }
             ],
             attributes: {
