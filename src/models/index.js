@@ -118,6 +118,7 @@ db.routes.belongsTo(db.tours);
 // tour and image: one to many
 db.tours.hasMany(db.tour_images, {
     foreignKey: 'tourId',
+    as: 'images',
     foreignKeyConstraint: true,
 });
 db.tour_images.belongsTo(db.tours);
