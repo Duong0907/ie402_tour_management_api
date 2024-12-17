@@ -1071,7 +1071,7 @@ INSERT INTO POINT (id, longitude, latitude) VALUES
 INSERT INTO TOUR 
 (id, name, price, date_start, total_time, description, thumbnail_img, center_point_id, zoom_val, admin_id)
 VALUES
-("tour1", "Tour Dinh Độc Lập - Hội quán Tuệ Thanh - Chợ Bình Tây", 3500000, "2024-12-12", "3 ngày 2 đêm", "Tour tham quan 3 điểm đến nổi tiếng tại Thành phố Hồ Chí Minh", "https://static.hotdeal.vn/images/1598/1598345/500x500/356818-tour-sai-gon-city-tour-1-ngay-dinh-doc-lap-nha-tho-duc-ba-buu-dien-thanh-pho-cho-ben-thanh-khoi-hanh-hang-ngay-ko-phu-thu-cuoi-tuan.jpg", "tour1-center", 13, 1);
+("tour1", "Tour Dinh Độc Lập - Hội quán Tuệ Thanh - Chợ Bình Tây", 3500000, "2024-12-12", "3 ngày 2 đêm", "Tour tham quan 3 điểm đến nổi tiếng tại Thành phố Hồ Chí Minh", "https://dulichthuduc.com.vn/vnt_upload/tour/12_2022/dinh_doc_lap_thanh_pho_ho_chi_minh_du_lich_thu_duc_travel.jpg", "tour1-center", 13, 1);
 
 -- route 
 INSERT INTO ROUTE (id, name, description, tour_id) VALUES 
@@ -2148,7 +2148,7 @@ INSERT INTO POINT (id, longitude, latitude) VALUES
 INSERT INTO TOUR 
 (id, name, price, date_start, total_time, description, thumbnail_img, center_point_id, zoom_val, admin_id)
 VALUES
-("tour2", "Tour Dinh Độc Lập - Chợ Bến Thành - Bảo tàng mỹ thuật", 2500000, "2024-12-12", "4 ngày 3 đêm", "Tour tham quan 3 điểm đến nổi tiếng tại Thành phố Hồ Chí Minh", "https://static.hotdeal.vn/images/1598/1598345/500x500/356818-tour-sai-gon-city-tour-1-ngay-dinh-doc-lap-nha-tho-duc-ba-buu-dien-thanh-pho-cho-ben-thanh-khoi-hanh-hang-ngay-ko-phu-thu-cuoi-tuan.jpg", "tour2-center", 16, 1);
+("tour2", "Tour Dinh Độc Lập - Chợ Bến Thành - Bảo tàng mỹ thuật", 2500000, "2024-12-12", "4 ngày 3 đêm", "Tour tham quan 3 điểm đến nổi tiếng tại Thành phố Hồ Chí Minh", "https://r2.nucuoimekong.com/wp-content/uploads/cho-ben-thanh.jpg", "tour2-center", 16, 1);
 
 -- route 
 INSERT INTO ROUTE (id, name, description, tour_id) VALUES 
@@ -2453,7 +2453,7 @@ INSERT INTO POINT (id, longitude, latitude) VALUES
 INSERT INTO TOUR 
 (id, name, price, date_start, total_time, description, thumbnail_img, center_point_id, zoom_val, admin_id)
 VALUES
-("tour3", "Tour Nhà thờ Đức Bà Sài Gòn - Nhà hát lớn Thành phố - Bảo tàng Lịch sử Việt Nam", 2500000, "2024-12-12", "4 ngày 3 đêm", "Tour tham quan 3 điểm đến nổi tiếng tại Thành phố Hồ Chí Minh", "https://static.hotdeal.vn/images/1598/1598345/500x500/356818-tour-sai-gon-city-tour-1-ngay-dinh-doc-lap-nha-tho-duc-ba-buu-dien-thanh-pho-cho-ben-thanh-khoi-hanh-hang-ngay-ko-phu-thu-cuoi-tuan.jpg", "tour3-center", 16, 1);
+("tour3", "Tour Nhà thờ Đức Bà Sài Gòn - Nhà hát lớn Thành phố - Bảo tàng Lịch sử Việt Nam", 2500000, "2024-12-12", "4 ngày 3 đêm", "Tour tham quan 3 điểm đến nổi tiếng tại Thành phố Hồ Chí Minh", "https://static.vinwonders.com/production/nha-tho-duc-ba-12.jpg", "tour3-center", 16, 1);
 
 -- route 
 INSERT INTO ROUTE (id, name, description, tour_id) VALUES 
@@ -2995,7 +2995,7 @@ INSERT INTO POINT (id, longitude, latitude) VALUES
 INSERT INTO TOUR 
 (id, name, price, date_start, total_time, description, thumbnail_img, center_point_id, zoom_val, admin_id)
 VALUES
-("tour4", "Tour Thảo Cầm Viên Sài Gòn - Phố đi bộ Nguyễn Huệ - Khu Phố Tây Bùi Viện", 2500000, "2024-12-12", "4 ngày 3 đêm", "Tour tham quan 3 điểm đến nổi tiếng tại Thành phố Hồ Chí Minh", "https://static.hotdeal.vn/images/1598/1598345/500x500/356818-tour-sai-gon-city-tour-1-ngay-dinh-doc-lap-nha-tho-duc-ba-buu-dien-thanh-pho-cho-ben-thanh-khoi-hanh-hang-ngay-ko-phu-thu-cuoi-tuan.jpg", "tour4-center", 15, 1);
+("tour4", "Tour Thảo Cầm Viên Sài Gòn - Phố đi bộ Nguyễn Huệ - Khu Phố Tây Bùi Viện", 2500000, "2024-12-12", "4 ngày 3 đêm", "Tour tham quan 3 điểm đến nổi tiếng tại Thành phố Hồ Chí Minh", "https://static.vinwonders.com/production/thao-cam-vien-1.jpg", "tour4-center", 15, 1);
 
 -- route 
 INSERT INTO ROUTE (id, name, description, tour_id) VALUES 
@@ -3958,7 +3958,7 @@ INSERT INTO POINT (id, longitude, latitude) VALUES
 INSERT INTO TOUR 
 (id, name, price, date_start, total_time, description, thumbnail_img, center_point_id, zoom_val, admin_id)
 VALUES
-("tour5", "Tour Bảo tàng lịch sử Tp.HCM - đường sách Nguyễn Văn Bình - Dinh Độc Lập", 2500000, "2024-12-12", "4 ngày 3 đêm", "Tour tham quan 3 điểm đến nổi tiếng tại Thành phố Hồ Chí Minh", "https://static.hotdeal.vn/images/1598/1598345/500x500/356818-tour-sai-gon-city-tour-1-ngay-dinh-doc-lap-nha-tho-duc-ba-buu-dien-thanh-pho-cho-ben-thanh-khoi-hanh-hang-ngay-ko-phu-thu-cuoi-tuan.jpg", "tour5-center", 16, 1);
+("tour5", "Tour Bảo tàng lịch sử Tp.HCM - đường sách Nguyễn Văn Bình - Dinh Độc Lập", 2500000, "2024-12-12", "4 ngày 3 đêm", "Tour tham quan 3 điểm đến nổi tiếng tại Thành phố Hồ Chí Minh", "https://r2.nucuoimekong.com/wp-content/uploads/duong-sach-nguyen-van-binh-1.jpg", "tour5-center", 16, 1);
 
 -- route 
 INSERT INTO ROUTE (id, name, description, tour_id) VALUES 
@@ -4861,7 +4861,7 @@ INSERT INTO POINT (id, longitude, latitude) VALUES
 INSERT INTO TOUR 
 (id, name, price, date_start, total_time, description, thumbnail_img, center_point_id, zoom_val, admin_id)
 VALUES
-("tour6", "Tour Bến Nhà Rồng - Bến Bạch Đằng - Bảo tàng chiến dịch Hồ Chí Minh", 5500000, "2024-12-12", "4 ngày 3 đêm", "Tour tham quan 3 điểm đến nổi tiếng tại Thành phố Hồ Chí Minh", "https://static.hotdeal.vn/images/1598/1598345/500x500/356818-tour-sai-gon-city-tour-1-ngay-dinh-doc-lap-nha-tho-duc-ba-buu-dien-thanh-pho-cho-ben-thanh-khoi-hanh-hang-ngay-ko-phu-thu-cuoi-tuan.jpg", "tour6-center", 15, 1);
+("tour6", "Tour Bến Nhà Rồng - Bến Bạch Đằng - Bảo tàng chiến dịch Hồ Chí Minh", 5500000, "2024-12-12", "4 ngày 3 đêm", "Tour tham quan 3 điểm đến nổi tiếng tại Thành phố Hồ Chí Minh", "https://bizweb.dktcdn.net/thumb/1024x1024/100/101/075/articles/bt-22671322-f77b-47c5-a92a-6a7e9ba8ad0d.jpg?v=1564221792953", "tour6-center", 15, 1);
 
 -- route 
 INSERT INTO ROUTE (id, name, description, tour_id) VALUES 
