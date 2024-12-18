@@ -2453,7 +2453,7 @@ INSERT INTO POINT (id, longitude, latitude) VALUES
 INSERT INTO TOUR 
 (id, name, price, date_start, total_time, description, thumbnail_img, center_point_id, zoom_val, admin_id)
 VALUES
-("tour3", "Tour Nhà thờ Đức Bà Sài Gòn - Nhà hát lớn Thành phố - Bảo tàng Lịch sử Việt Nam", 2500000, "2024-12-12", "4 ngày 3 đêm", "Tour tham quan 3 điểm đến nổi tiếng tại Thành phố Hồ Chí Minh", "https://static.vinwonders.com/production/nha-tho-duc-ba-12.jpg", "tour3-center", 16, 1);
+("tour3", "Tour Nhà thờ Đức Bà Sài Gòn - Nhà hát lớn Thành phố - Bảo tàng Lịch sử Việt Nam", 4500000, "2024-12-12", "4 ngày 3 đêm", "Tour tham quan 3 điểm đến nổi tiếng tại Thành phố Hồ Chí Minh", "https://static.vinwonders.com/production/nha-tho-duc-ba-12.jpg", "tour3-center", 16, 1);
 
 -- route 
 INSERT INTO ROUTE (id, name, description, tour_id) VALUES 
@@ -2995,7 +2995,7 @@ INSERT INTO POINT (id, longitude, latitude) VALUES
 INSERT INTO TOUR 
 (id, name, price, date_start, total_time, description, thumbnail_img, center_point_id, zoom_val, admin_id)
 VALUES
-("tour4", "Tour Thảo Cầm Viên Sài Gòn - Phố đi bộ Nguyễn Huệ - Khu Phố Tây Bùi Viện", 2500000, "2024-12-12", "4 ngày 3 đêm", "Tour tham quan 3 điểm đến nổi tiếng tại Thành phố Hồ Chí Minh", "https://static.vinwonders.com/production/thao-cam-vien-1.jpg", "tour4-center", 15, 1);
+("tour4", "Tour Thảo Cầm Viên Sài Gòn - Phố đi bộ Nguyễn Huệ - Khu Phố Tây Bùi Viện", 3000000, "2024-12-12", "4 ngày 3 đêm", "Tour tham quan 3 điểm đến nổi tiếng tại Thành phố Hồ Chí Minh", "https://static.vinwonders.com/production/thao-cam-vien-1.jpg", "tour4-center", 15, 1);
 
 -- route 
 INSERT INTO ROUTE (id, name, description, tour_id) VALUES 
@@ -3958,7 +3958,7 @@ INSERT INTO POINT (id, longitude, latitude) VALUES
 INSERT INTO TOUR 
 (id, name, price, date_start, total_time, description, thumbnail_img, center_point_id, zoom_val, admin_id)
 VALUES
-("tour5", "Tour Bảo tàng lịch sử Tp.HCM - đường sách Nguyễn Văn Bình - Dinh Độc Lập", 2500000, "2024-12-12", "4 ngày 3 đêm", "Tour tham quan 3 điểm đến nổi tiếng tại Thành phố Hồ Chí Minh", "https://r2.nucuoimekong.com/wp-content/uploads/duong-sach-nguyen-van-binh-1.jpg", "tour5-center", 16, 1);
+("tour5", "Tour Bảo tàng lịch sử Tp.HCM - đường sách Nguyễn Văn Bình - Dinh Độc Lập", 5300000, "2024-12-12", "4 ngày 3 đêm", "Tour tham quan 3 điểm đến nổi tiếng tại Thành phố Hồ Chí Minh", "https://r2.nucuoimekong.com/wp-content/uploads/duong-sach-nguyen-van-binh-1.jpg", "tour5-center", 16, 1);
 
 -- route 
 INSERT INTO ROUTE (id, name, description, tour_id) VALUES 
