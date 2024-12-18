@@ -18,11 +18,11 @@ const createUser = async (user) => {
     }
 
     // Validate password
-    if (!isValidPassword(password)) {
-        return new BadRequestErrorResponse(
-            'Password must have min 8 letter, with at least a symbol, upper and lower case letters and a number',
-        );
-    }
+    // if (!isValidPassword(password)) {
+    //     return new BadRequestErrorResponse(
+    //         'Password must have min 8 letter, with at least a symbol, upper and lower case letters and a number',
+    //     );
+    // }
 
     const existedUser = await UserModel.findOne({
         where: {
