@@ -21,6 +21,16 @@ module.exports = (sequelize, DataTypes) => {
             allowNull: false,
             defaultValue: 'pending',
         },
+        ticketQuantity: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            field: 'ticket_quantity',
+        },
+        totalPrice: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            field: 'total_price',
+        },
         createdAt: {
             type: DataTypes.DATE,
             field: 'created_at',
